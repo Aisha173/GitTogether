@@ -7,6 +7,7 @@ const ideas = [
   "A gamified learning roadmap based on real projects",
 ];
 
+// Hello there
 export default function IdeaGenerator() {
   const [idea, setIdea] = useState("");
 
