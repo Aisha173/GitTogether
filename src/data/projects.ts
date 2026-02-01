@@ -111,5 +111,75 @@ export const projects = [
       level: 2,
     },
   },
+    {
+    id: 1,
+    title: "Plant Tracker",
+    description:
+      "Track the growth of different plant species and share data with other biology students.",
+    tech: ["Google Sheets", "Python (optional)"],
+    lookingFor: "Biology students, Data enthusiasts",
+    owner: {
+      name: "Aisha",
+      avatar: "A",
+      role: "Biology Student",
+      level: 1,
+    },
+  },
+  {
+    id: 2,
+    title: "Local History Podcast",
+    description:
+      "Create a podcast exploring the history of your town, including interviews and research.",
+    tech: ["Audacity", "Canva (optional)"],
+    lookingFor: "Writers, Historians, Audio editors",
+    owner: {
+      name: "Thomas",
+      avatar: "T",
+      role: "History Student",
+      level: 2,
+    },
+  },
+  {
+    id: 3,
+    title: "Community Art Mural",
+    description:
+      "Collaborate with artists to design and paint a mural in a public space.",
+    tech: [],
+    lookingFor: "Artists, Designers, Volunteers",
+    owner: {
+      name: "Ari",
+      avatar: "A",
+      role: "Art Student",
+      level: 1,
+    },
+  },
+  {
+    id: 4,
+    title: "School Garden Project",
+    description:
+      "Plan and maintain a school vegetable garden while collecting growth data for science experiments.",
+    tech: ["Excel (optional)"],
+    lookingFor: "Environmental science students, Volunteers",
+    owner: {
+      name: "Kolby",
+      avatar: "K",
+      role: "Environmental Science Student",
+      level: 1,
+    },
+  },
+  {
+    id: 5,
+    title: "Mental Health Awareness Campaign",
+    description:
+      "Design posters, social media campaigns, and events to promote mental health in schools.",
+    tech: ["Canva", "Social Media"],
+    lookingFor: "Psychology students, Designers, Writers",
+    owner: {
+      name: "Koyu",
+      avatar: "K",
+      role: "Psychology Student",
+      level: 2,
+    },
+  },
 ];
 
