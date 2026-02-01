@@ -1,21 +1,22 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import ProjectCard from "../components/ProjectCard";
+// 1. Import the Project interface from your component
+import ProjectCard, { type Project } from "../components/ProjectCard";
 import { projects as initialProjects } from "../data/projects";
 
 export default function Home() {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [exitDirection, setExitDirection] = useState(0); // -1000 for left, 1000 for right
+  const [exitDirection, setExitDirection] = useState(0);
 
   const handleAction = (direction: "left" | "right") => {
     setExitDirection(direction === "left" ? -1000 : 1000);
-    // Delay the index change slightly to let the animation play
     setTimeout(() => {
       setCurrentIndex((prev) => prev + 1);
     }, 200);
   };
 
-  const currentProject = initialProjects[currentIndex];
+
+  const currentProject = initialProjects[currentIndex] as Project;
 
   return (
     <div className="h-full flex flex-col p-6 overflow-hidden">
@@ -32,17 +33,18 @@ export default function Home() {
         <AnimatePresence mode="wait">
           {currentProject ? (
             <motion.div
-              key={currentProject.id}
+              key={currentProject.title} // Use title or ID as a key
               initial={{ x: 0, opacity: 1, scale: 0.9 }}
               animate={{ x: 0, opacity: 1, scale: 1 }}
               exit={{
                 x: exitDirection,
                 opacity: 0,
-                rotate: exitDirection / 20, // Adds a slight tilt as it flies away
+                rotate: exitDirection / 20,
                 transition: { duration: 0.4 },
               }}
               className="w-full"
             >
+              {/* 3. The red line should disappear here now! */}
               <ProjectCard project={currentProject} onAction={handleAction} />
             </motion.div>
           ) : (
