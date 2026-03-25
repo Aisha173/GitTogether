@@ -35,7 +35,7 @@ GitTogether connects students through:
 - Backend: Supabase 
 
 ## Live Demo 
-https://git-together-seven.vercel.app
+https://git-together-xi.vercel.app
 
 ## Status
 Built for a hackathon. This is a prototype demo showcasing the core concept and user experience.
