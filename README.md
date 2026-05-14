@@ -1,4 +1,4 @@
-# GitTogether 🤝💻
+# GitTogether 
 
 GitTogether is a project-matching platform that helps students find collaborators to build real-world projects and gain hands-on experience.
 
